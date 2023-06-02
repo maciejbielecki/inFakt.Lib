@@ -37,5 +37,15 @@
 
         public static string GetIncomeTaxes => "income_taxes.json";
         public static string GetIncomeTaxById => "income_taxes/{0}.json";
+
+        public static string GetVatRates => "vat_rates.json";
+        public static string GetOSSVatRates => "moss_vat_rates.json";
+        public static string GetCountries => "countries.json";
+
+        public static string GetBankAccounts => "bank_accounts.json";
+        public static string GetBankAccount => "bank_accounts/{0}.json";
+        public static string PostBankAccount => "bank_accounts.json";
+        public static string PutBankAccount => "bank_accounts/{0}.json";
+        public static string DeleteBankAccount => "bank_accounts/{0}.json";
     }
 }

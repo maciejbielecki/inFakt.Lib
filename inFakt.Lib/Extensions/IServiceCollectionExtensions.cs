@@ -1,5 +1,4 @@
 using inFakt.Lib;
-using inFakt.Lib.Models;
 using inFakt.Lib.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http.Headers;
@@ -17,6 +16,8 @@ namespace Microsoft.AspNetCore.Builder
                 .AddScoped<IInsuranceService, InsuranceService>()
                 .AddScoped<IInvoiceService, InvoiceService>()
                 .AddScoped<IProductService, ProductService>()
+                .AddScoped<IAppDataService, AppDataService>()
+                .AddScoped<IBankAccountService, BankAccountService>()
                 .AddScoped<IUserDataService, UserDataService>();
 
             sc.AddHttpClient("InFakt", httpClient =>

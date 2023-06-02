@@ -2,12 +2,12 @@
 
 namespace inFakt.Lib.Models
 {
-    public class Vats
+    public class Countries
     {
         [JsonPropertyName("metainfo")]
         public MetaInfo MetaInfo { get; set; }
 
         [JsonPropertyName("entities")]
-        public VatEntity[] Entities { get; set; }
+        public CountryEntity[] Entities { get; set; }
     }
 }
